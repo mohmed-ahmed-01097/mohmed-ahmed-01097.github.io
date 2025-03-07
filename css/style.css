@@ -50,6 +50,7 @@ ul{
     display: black;
     padding: 0 30px;
     opacity: 1;
+    scroll-margin-top: 25px;
 }
 
 .hidden{
@@ -57,7 +58,7 @@ ul{
 }
 
 .main-content{
-    padding-left: 270px;
+	margin-top: 80x;
 }
 
 .padd-15{
@@ -157,31 +158,29 @@ ul{
 }
 
 .aside{
-    width:270px;
+    width: 100%;
     background: var(--bg-black-100);
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     z-index: 10;
-    height: 100%;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
+    height: 80px;
+    padding: 0 30px;
     display: flex;
-    border-right: 1px solid var(--bg-black-50);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bg-black-50);
 }
 
 .aside .logo{
-    position: absolute;
-    top: 50px;
     font-size: 30px;
     text-transform: capitalize;
+    position: relative;
 }
 
 .aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
-    /* background-color: red; */
     padding: 15px 20px;
     letter-spacing: 5px;
     position: relative;
@@ -258,12 +257,20 @@ ul{
 }
 
 .aside .nav{
-    margin-top: 50px;
+    margin: 25px;
+}
+
+.aside .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .aside .nav li {
-    margin-bottom: 20px;
-    display: block;
+    display: inline-block;
+    margin: 0;
 }
 
 .aside .nav li a{
@@ -271,12 +278,15 @@ ul{
     font-weight: 600;
     display: block;
     color: var(--text-black-900);
-    padding: 5px 15px;
-    border-bottom:1px solid var(--bg-black-50) ;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
 }
 
-.aside .nav li a.active{
+.aside .nav li a.active,
+.aside .nav li a:hover {
     color: var(--skin-color);
+    border-bottom: 2px solid var(--skin-color);
 }
 
 .aside .nav li a i{
