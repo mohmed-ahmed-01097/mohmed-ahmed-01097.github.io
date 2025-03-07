@@ -32,7 +32,7 @@
 
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>Mohamed</span></a>
+                <a href="#"><span>MAAM</span></a>
             </div>
 
             <div class="nav-toggler">
@@ -56,7 +56,8 @@
                             <h3 class="hello">Hey there! I'm <span class="name">Mohamed Ahmed Abdellah Mohamed</span></h3>
                             <h3 class="my-profission"><span class=> Embedded Systems Engineer </span> 
                             </h3>
-                            <!-- <h3 class="my-profession">I'm an <span class="typing"> Embedded Systems Engineer </span></h3> -->
+                            <h3 class="my-profession">I'm an 
+							<span class="typing"> </span></h3>
                             <br>
                             <p>Welcome to my professional portfolio. 
                                 I am Mohamed Ahmed Abdellah Mohamed, a dedicated and innovative embedded engineer 
@@ -520,19 +521,19 @@
                         </li>
                         <li class="contact-info-item padd-15">
                             <div class="icon">
-                                <a href="https://github.com/KirellosEmadSamir" aria-label="github" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+                                <a href="https://github.com/mohmed-ahmed-01097" aria-label="github" target="_blank"><i class="fa fa-brands fa-github"></i></a>
                             </div>
                             <h4>Github</h4>
                         </li>
                         <li class="contact-info-item padd-15">
                             <div class="icon">
-                                <a href="https://www.linkedin.com/in/kirellosemadsamir/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/mohamedahmed01097/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
                             </div>
                             <h4>Linkedin</h4>
                         </li>
                         <li class="contact-info-item padd-15">
                             <div class="icon">
-                                <a href="https://api.whatsapp.com/send/?phone=201067987114&text=&app_absent=0" target="_blank"><i class="fa fa-brands fa-whatsapp"></i></a>
+                                <a href="https://api.whatsapp.com/send/?phone=201097502015&text=&app_absent=0" target="_blank"><i class="fa fa-brands fa-whatsapp"></i></a>
                             </div>
                             <h4>WhatsApp</h4>
                         </li>
@@ -599,7 +600,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
         integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script src="js/script.js?v=<?php echo time(); ?>"></script>
     <script src="js/style-switcher.js"></script>
 
     <script>
@@ -609,6 +611,7 @@
         
         function showSlides() {
             const slides = document.querySelectorAll('.slide');
+            if (slides.length === 0) return;
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }

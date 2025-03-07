@@ -1,8 +1,8 @@
 var typed = new Typed('.typing', {
-    strings: ["Backend Development" ],
-    typeSpeed: 110,
-    BackSpeed: 60,
-    loop: true
+	strings: ["Embedded Systems Engineer", "Model-Based Development Engineer"],
+	typeSpeed: 110,
+	backSpeed: 60,
+	loop: true
 })
 
 const navItems = document.querySelectorAll('.nav-item');
