@@ -541,44 +541,48 @@
                     <h3 class="contact-title padd-15">SEND ME ANY EMAIL</h3>
                     <h4 class="contact-sub-title padd-15"> I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <div class="row">
-                        <form class="contact-form padd-15">
+                        <form class="contact-form padd-15" action="https://formspree.io/f/xdkendek" method="POST">
                             <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" id="" class="form-control" placeholder="Massage"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Massage</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
+								<div class="form-item col-6 padd-15">
+									<div class="form-group">
+										<label for="name">Your Name:</label>
+										<input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+									</div>
+								</div>
+							<div class="form-item col-6 padd-15">
+								<div class="form-group">
+									<label for="email">Your Email:</label>
+									<input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-item col-12 padd-15">
+								<div class="form-group">
+									<label for="subject">Subject:</label>
+									<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-item col-12 padd-15">
+								<div class="form-group">
+									<label for="message">Your Message:</label>
+									<textarea id="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
+								</div>
+							</div>
+						  </div>
+						  <div class="row">
+									<div class="form-item col-12 padd-15">
+									<button type="submit" class="btn">Send Massage</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
 
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
