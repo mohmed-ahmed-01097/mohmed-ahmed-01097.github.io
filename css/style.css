@@ -219,7 +219,7 @@ ul{
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    left: 300px;
+    left: 80%;
     top: 20px;
     border-radius: 5px ;
     background: var(--bg-black-100);
@@ -257,7 +257,8 @@ ul{
 }
 
 .aside .nav{
-    margin: 25px;
+	margin: 0px;
+	padding: 10px;
 }
 
 .aside .nav ul {
@@ -800,13 +801,39 @@ h3.my-profission{
     padding: 0 5;
 }
 
-@media (max-width:1199px) {
-    .aside{
-        left: -270px;
-    }
-    .main-content{
-        padding-left: 0;
-    }
+@media (max-width: 1199px) {
+	.aside .nav-toggler {
+		display: flex;
+		height: 40px;
+		width: 70px;
+		border: 1px solid var(--bg-black-50);
+		cursor: pointer;
+		border-radius: 5px;
+		background: var(--bg-black-100);
+		align-items: center;
+		justify-content: center;
+	}
+	.nav {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 80px; /* Adjust based on your header height */
+		left: 0;
+		width: 100%;
+		background: var(--bg-black-100);
+		border-top: 1px solid var(--bg-black-50);
+	}
+	  
+	  /* Display the menu when active */
+	.nav.active {
+		display: flex;
+	}
+	 
+	/* Adjust individual nav item styling for mobile */
+	.nav li {
+		margin: 10px 0;
+		text-align: center;
+	}
     .about .about-content.personal-info .info-item p span{
         display: block;
         margin-left: 0;
