@@ -873,49 +873,58 @@ h3.my-profission{
     }
 }
 
-
 #gallery {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .gallery-slider {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vw;
+  margin: auto;
+  overflow: hidden;
 }
 
 .slides {
-    display: flex;
-    transition: transform 0.5s ease;
+  display: flex;
+  transition: transform 1s ease;
 }
 
 .slide {
-    min-width: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
 }
 
 button.prev {
-    left: 10px;
+  left: 10px;
 }
 
 button.next {
-    right: 10px;
+  right: 10px;
 }
-
-
